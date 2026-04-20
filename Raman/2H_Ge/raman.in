@@ -1,0 +1,20 @@
+&inputraman
+  prefix           = 'hexge'
+  outdir           = 'temp'
+  fil_dvec         = 'hexge.dvec'
+  fil_elph         = 'hexge.elph'
+  sorb             = .false.
+  circular_pol     = .true.
+  nonpol           = .false.
+  plot_matele_opt  = .true.
+  plot_matele_elph = .true.
+  plot_raman_k     = .true.
+  gamma            = 0.4
+  gamma_raman      = 0.0001
+  rs_start         = 100.0
+  rs_end           = 650.0
+  nrs              = 1000
+  elaser1          = 2.33
+  !elaser2          = 2.53
+  !elaser3          = 2.73
+/

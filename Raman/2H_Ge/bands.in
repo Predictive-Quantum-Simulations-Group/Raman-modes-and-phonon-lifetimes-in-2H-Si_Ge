@@ -1,0 +1,7 @@
+&BANDS
+  prefix   = 'hexge'
+  outdir   = 'temp'
+  filband  = 'hexge.bands'
+  lp       = .true.
+  filp     = 'hexge.dvec'
+/

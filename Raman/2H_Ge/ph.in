@@ -1,0 +1,11 @@
+&INPUTPH
+  outdir = 'temp'
+  prefix = 'hexge'
+  tr2_ph = 1d-12
+  verbosity = 'high'
+  fildyn = 'hexge.dyn'
+  fildvscf = 'dvscf'
+  electron_phonon = 'epc'
+/
+0.0 0.0 0.0
+
