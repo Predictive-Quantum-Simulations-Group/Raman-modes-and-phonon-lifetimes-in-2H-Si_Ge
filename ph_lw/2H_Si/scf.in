@@ -1,0 +1,41 @@
+&CONTROL
+  calculation = 'scf'
+  etot_conv_thr =   4.0000000000d-05
+  forc_conv_thr =   1.0000000000d-04
+  outdir = 'temp'
+  prefix = 'hexsi'
+  pseudo_dir = 'pseudo'
+  verbosity = 'high'
+/
+&SYSTEM
+  !degauss =   2.0000000000d-02
+  ecutrho =   180
+  ecutwfc =   45
+  ibrav = 0
+  nat = 4
+  nosym = .false.
+  ntyp = 1
+  !occupations = 'smearing'
+  !smearing = 'cold'
+  nbnd = 16
+/
+&ELECTRONS
+  conv_thr =   8.0000000000d-10
+  electron_maxstep = 80
+  mixing_beta =   4.0000000000d-01
+/
+ATOMIC_SPECIES
+Si     28.0855 Si.pz-rrkj.UPF
+CELL_PARAMETERS (angstrom)
+   3.850179322  -0.000000000  -0.000000000
+  -1.925089661   3.334353102  -0.000000000
+   0.000000000   0.000000000   6.365096024
+
+ATOMIC_POSITIONS (crystal)
+Si            0.3333333300        0.6666666700        0.0629934944
+Si            0.6666666700        0.3333333300        0.9370065056
+Si            0.6666666600        0.3333333300        0.5629934944
+Si            0.3333333400        0.6666666700        0.4370065056
+K_POINTS automatic
+4 4 2 0 0 0
+

@@ -1,0 +1,14 @@
+&INPUTPH
+  outdir = 'temp'
+  prefix = 'hexsi'
+drho_star%open = .true.
+    drho_star%ext  = 'drho',
+    drho_star%dir  = './FILDRHO'
+  tr2_ph = 1d-10
+  ldisp = .true.
+!  recover = .true.
+  nq1 = 2
+  nq2 = 2
+  nq3 = 1
+  fildyn = 'hexsi.dyn'
+/
