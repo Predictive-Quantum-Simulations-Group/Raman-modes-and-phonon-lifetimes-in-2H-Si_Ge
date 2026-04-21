@@ -12,7 +12,19 @@ The workflow followed is:
  c. Evaluate Raman tensor using raman.x.  
 3. Post-processing of the data to obtain the Raman spectra.
 
+**d3q Workflow for Third-Order Anharmonic Calculations**
+
+The workflow for computing third-order interatomic force constants (IFCs) using Density Functional Perturbation Theory (DFPT) as implemented in Quantum ESPRESSO and d3q package is given as follows.  
+
+The calculation proceeds in the following stages:
+
+1. Ground-state (SCF) calculation
+2. Phonon calculation on a q-point grid (ph.x)
+3. Third-order perturbation calculation (d3q.x)
+4. Post-processing for real-space IFCs and transport properties
+
 **References**
 
 https://doi.org/10.1016/j.cpc.2023.108967  
-https://doi.org/10.1088/0953-8984/21/39/395502
+https://doi.org/10.1088/0953-8984/21/39/395502  
+https://doi.org/10.1103/PhysRevB.87.214303
