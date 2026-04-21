@@ -1,0 +1,14 @@
+&INPUTPH
+  outdir = 'temp'
+  prefix = 'hex_ge'
+drho_star%open = .true.
+    drho_star%ext  = 'drho',
+    drho_star%dir  = './FILDRHO'
+  tr2_ph = 1d-12
+  ldisp = .true.
+!  recover = .true.
+  nq1 = 2
+  nq2 = 2
+  nq3 = 2
+  fildyn = 'hexge.dyn'
+/

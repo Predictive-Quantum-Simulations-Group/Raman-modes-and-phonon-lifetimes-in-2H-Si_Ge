@@ -1,0 +1,46 @@
+&CONTROL
+  calculation = 'scf'
+  etot_conv_thr =   4.0000000000d-05
+  forc_conv_thr =   1.0000000000d-04
+  outdir = 'temp'
+  prefix = 'hex_ge'
+  pseudo_dir = 'pseudo'
+  tprnfor = .true.
+  tstress = .true.
+  verbosity = 'high'
+  !wf_collect = .true.
+/
+&SYSTEM
+  degauss =   1.0000000000d-02
+  ecutrho =   240
+  ecutwfc =   60
+  ibrav = 0
+  nat = 4
+  nosym = .false.
+  ntyp = 1
+  occupations = 'smearing'
+  smearing = 'cold'
+  !nbnd = 40
+/
+
+&ELECTRONS
+  conv_thr =   8.0000000000d-10
+  electron_maxstep = 500
+  mixing_beta =   4.0000000000d-01
+/
+
+ATOMIC_SPECIES
+Ge     72.64 Ge_ONCV_PBE-1.0.upf
+K_POINTS automatic
+8 8 4 0 0 0
+
+CELL_PARAMETERS (angstrom)
+   4.027532873  -0.000000000  -0.000000000
+  -2.013766437   3.487945783  -0.000000000
+  -0.000000000  -0.000000000   6.642694559
+
+ATOMIC_POSITIONS (crystal)
+Ge            0.3333333300        0.6666666700        0.5629812323
+Ge            0.6666666700        0.3333333300        0.4370187677
+Ge            0.6666666600        0.3333333300        0.0629812323
+Ge            0.3333333400        0.6666666700        0.9370187677

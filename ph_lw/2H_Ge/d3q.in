@@ -1,0 +1,12 @@
+d3 for hex ge
+&inputd3q
+   mode='full'
+   prefix = 'hex_ge',
+   outdir='temp'
+   fildrho = 'auto:drho',
+   fildrho_dir = 'FILDRHO'
+   fild3dyn = 'FILD3DYN/anh',
+   ethr_ph = 1.d-12
+   restart=.true.
+ /
+ 2 2 2
