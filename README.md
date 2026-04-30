@@ -6,7 +6,7 @@ The calculations are performed using density functional theory (DFT) using Quant
 The workflow followed is:
 
 1. Perform self-consistent field (SCF) calculation.
-2. Usiing the QERaman package,  
+2. Using the QERaman package,  
  a. Compute the bands calculation using bands_mat.x utility to obtain the electron-photon matrix elements.  
  b. Compute phonon properties using ph_mat.x for the electron-phonon matrix elements  
  c. Evaluate Raman tensor using raman.x.  
